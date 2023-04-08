@@ -83,7 +83,7 @@
 			<NavLi href="/testimonials" active={active === 4} on:click={() => setActive(4)}
 				><p class="text-base md:text-xl">Testimonials</p></NavLi
 			>
-			<NavLi href="https://lino-zeta.vercel.app/" active={active === 5} on:click={() => setActive(5)}><p class="text-base md:text-xl">Projects</p></NavLi>
+			<NavLi href="https://astr-one.vercel.app/" active={active === 5} on:click={() => setActive(5)}><p class="text-base md:text-xl">Projects</p></NavLi>
 		</NavUl>
 	</Navbar>
 </header>
@@ -112,7 +112,7 @@
 			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">FAQs</FooterLink>
 			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Testimonials</FooterLink
 			>
-			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="https://lino-zeta.vercel.app/">Projects</FooterLink>
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="https://astr-one.vercel.app/">Projects</FooterLink>
 
 			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Contact Us</FooterLink>
 		</FooterLinkGroup>
