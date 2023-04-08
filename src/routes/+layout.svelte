@@ -19,6 +19,7 @@
 		FooterCopyright,
 		FooterIcon
 	} from 'flowbite-svelte';
+	import '@fontsource/poppins';
 
 	let active = 0;
 
@@ -60,28 +61,29 @@
 		<NavBrand href="/" class="">
 			<img
 				src="/images/logos.webp"
-				class="h-auto mx-auto  w-9 md:w-9 lg:w-9"
+				class="h-auto w-9 md:w-9 lg:w-9"
 				alt="mission"
 			/>
-			<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white ">
-				Asterisc.in
+			<span class="self-center whitespace-nowrap text-2xl  dark:text-white ">
+				<p class="text-2xl">Asterisc.in</p>
 			</span>
 		</NavBrand>
 		<div class="flex md:order-2">
-			<a href="#getstarted" class="mt-1" ><Button size="sm" >Get started</Button></a>
+			<!-- <a href="#getstarted" class="mt-1" ><Button size="sm" >Get started</Button></a> -->
 			
 			<DarkMode class="ml-2" btnClass={darkmodebtn} />
 			<NavHamburger on:click={toggle} />
 		</div>
 
 		<NavUl {hidden} {divClass} {ulClass}>
-			<NavLi href="/" active={active === 0} on:click={() => setActive(0)}>Home</NavLi>
-			<NavLi href="/aboutus" active={active === 1} on:click={() => setActive(1)}>About Us</NavLi>
-			<NavLi href="/faqs" active={active === 2} on:click={() => setActive(2)}>FAQ</NavLi>
-			<NavLi href="/testimonials" active={active === 3} on:click={() => setActive(3)}
-				>Testimonials</NavLi
+			<NavLi href="/" active={active === 0} on:click={() => setActive(0)}><p class=" text-base  md:text-xl">Home</p></NavLi>
+			<NavLi href="/aboutus" active={active === 1} on:click={() => setActive(1)}><p class="text-base md:text-xl">About Us</p></NavLi>
+			<NavLi href="/courses" active={active === 2} on:click={() => setActive(2)}><p class="text-base md:text-xl">Courses</p></NavLi>
+			<NavLi href="/faqs" active={active === 3} on:click={() => setActive(3)}><p class="text-base md:text-xl">FAQ</p></NavLi>
+			<NavLi href="/testimonials" active={active === 4} on:click={() => setActive(4)}
+				><p class="text-base md:text-xl">Testimonials</p></NavLi
 			>
-			<NavLi href="/projects" active={active === 4} on:click={() => setActive(4)}>Projects</NavLi>
+			<NavLi href="https://lino-zeta.vercel.app/" active={active === 5} on:click={() => setActive(5)}><p class="text-base md:text-xl">Projects</p></NavLi>
 		</NavUl>
 	</Navbar>
 </header>
@@ -110,7 +112,7 @@
 			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">FAQs</FooterLink>
 			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Testimonials</FooterLink
 			>
-			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Projects</FooterLink>
+			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="https://lino-zeta.vercel.app/">Projects</FooterLink>
 
 			<FooterLink liClass="" aClass="mr-4 hover:underline md:mr-6" href="/">Contact Us</FooterLink>
 		</FooterLinkGroup>
@@ -120,3 +122,10 @@
 		>
 	</div>
 </Footer>
+<style>
+	
+
+	p {
+		font-family: "Poppins", sans-serif;
+	}
+</style>
